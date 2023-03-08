@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BYU CFAC Website</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="base.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="container-fluid">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">College of Fine Arts and Communications</a>
+            <menu class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="form.html">Apply</a>
+                </li>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-box-wrapper">
+            <h3 class="form-box-header">Basic Information</h3>
+            <div class="form-box">
+            <label for="text">First Name: </label>
+            <input type="text" id="first-name" placeholder="first name" required pattern="[Aa].*" />
+            <label for="text">Last Name: </label>
+            <input type="text" id="last-name" placeholder="last name" required pattern="[Aa].*" />    
+            </div>
+            <div class="form-box">
+                <label for="text">Email: </label>
+                <input type="text" id="email" placeholder="myEmail@gmail.com" required pattern="[Aa].*" />
+                <label for="tel">Phone Number: </label>
+                <input type="tel" id="tel" placeholder="###-###-####" pattern="\d{3}-\d{4}" />
+            </div>
+            <div class="form-box">
+                <label for="date">Birthday: </label>
+                <input type="date" id="birthday" />
+            </div>
+            <h3 class="form-box-header">Class Information</h3>
+            <div class="form-box">
+                <label for="text">Class of interest: </label>
+                <input type="text" id="class-interest" placeholder="Dance 110" required pattern="[Aa].*" />
+            </div>
+            <div class="form-box">
+                <label for="datetime">Time of Audition: </label>
+                <input type="datetime-local" id="audition-time" />
+            </div>
+            <div class="form-box">
+            <button type="submit" onclick="submit()">Submit</button>
+            </div>  
+        </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid">
+          <span>
+              Contact us at 801-555-5555 or at CFAC@byu.edu
+          </span>
+          <span class="right">
+              Visit <a href="byu.edu">byu.edu</a> to find out more about BYU
+          </span>
+      </div>
+  </footer>
+  </body>
